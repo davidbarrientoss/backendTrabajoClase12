@@ -1,0 +1,26 @@
+[
+  {
+    "name": "calculadora",
+    "price": "17",
+    "photo": "https://www.amazon.es/tostadora/s?k=tostadora",
+    "id": 1
+  },
+  {
+    "name": "calculadora",
+    "price": "17",
+    "photo": "https://www.amazon.es/tostadora/s?k=tostadora",
+    "id": 2
+  },
+  {
+    "name": "calculadora",
+    "price": "44",
+    "photo": "https://www.ocu.org/-/media/ocu/images/home/electrodomesticos/pequenos%20electrodomesticos/tostadoras-como-elegir/apertura_800x450.jpg?rev=e13e1ef1-3960-4383-9505-4a8e12e63313&mw=480&hash=1F906C2A51CA27AD4E0CB366F38D1F54",
+    "id": 3
+  },
+  {
+    "name": "calculadora",
+    "price": "44",
+    "photo": "https://www.ocu.org/-/media/ocu/images/home/electrodomesticos/pequenos%20electrodomesticos/tostadoras-como-elegir/apertura_800x450.jpg?rev=e13e1ef1-3960-4383-9505-4a8e12e63313&mw=480&hash=1F906C2A51CA27AD4E0CB366F38D1F54",
+    "id": 4
+  }
+]

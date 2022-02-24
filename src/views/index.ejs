@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <div>
+      <h1>Ingrese producto</h1>
+      <form id="productForm" method="post" action="/products">
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" />
+        <label for="price">Precio(€):</label>
+        <input type="number" name="price" />
+        <label for="photo">Photo(url):</label>
+        <input name="photo" type="text" />
+        <input type="submit" />
+      </form>
+    </div>
+    <div>
+      <table>
+        <h2>Lista de productos</h2>
+        <tr>
+          <th>Nombre</th>
+          <th>Precio</th>
+          <th>Foto</th>
+        </tr>
+        <% if (productArray) { %>
+            <% productArray.forEach(e => { %>
+             <tr>
+                 <td><%=e.name %> </td>
+                 <td><%=e.price %> </td>
+                 <% if (e.photo) { %>
+                  <td><img src=<%= e.photo%> alt="foto producto"> </td>
+                 <% } %>
+             </tr>
+            <% }) %>
+        <% } %>
+      </table>
+    </div>
+    <div>
+        <h2>Servicio al Cliente</h2>
+        <label for="userNameChatBox">Ingrese el nombre de usuario para interactuar en el chat</label>
+        <input name="userNameChatBox" type="text">
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../public/script.js"></script>
+  </body>
+</html>
